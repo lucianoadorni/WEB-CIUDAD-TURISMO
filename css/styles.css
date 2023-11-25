@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap');
+
+/* COLORS */
+:root {
+    --not-white: #E3D7D7;
+    --pred: #D52B1E;
+    --pblue: #0038A8;
+}
+
+/* GLOBAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1em;
+    color: black;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4em;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAV */
+nav {
+    background-color: var(--not-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 20%;
+    border-radius: 50px;
+    box-shadow: 15px 15px 20px 0px rgba(0,0,0,0.75);
+}
+
+nav i {
+    padding: 0 0.8em;
+    font-size: 2em;
+    color: black;
+    transition: 0.2s;
+}
+
+nav i:hover {
+    color: var(--pred);
+}
+
+/* HEADER */
+.imageslide {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageslide div {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 0.3em 5em;
+}
+
+.imageslide h1 {
+    font-size: 8em;
+    mix-blend-mode: screen;
+}
+
+.imageslide h1, h2, i {
+    color: var(--not-white);
+}
+
+.imageslide div h2 {
+    margin-left: 0.5em;
+}
+
+.parallax1 {
+    background-image: url("../media/slideshow1.jpg");
+}
+
+.parallax2 {
+    background-image: url("../media/slideshow2.png");
+}
+
+.parallax3 {
+    background-image: url("../media/slideshow3.webp");
+}
+
+/* MAIN */
+main {
+    margin: 0 1em;
+}
+main h1 {
+    margin: 0.8em auto;
+}
+
+/* IMAGE SHOWCASE */
+.imageshowcase > div {
+    background-color: var(--pred);
+    border-radius: 30px;
+    width: 100%;
+}
+
+.imageshowcase div h1 {
+    font-size: 2em;
+}
