@@ -102,20 +102,61 @@ nav i:hover {
 }
 
 /* MAIN */
-main {
-    margin: 0 1em;
-}
 main h1 {
-    margin: 0.8em auto;
+    margin: 0.5em auto;
 }
 
 /* IMAGE SHOWCASE */
-.imageshowcase > div {
+.slick-slide {
+    margin: 0 1em;
+}
+
+.imageholder {
     background-color: var(--pred);
     border-radius: 30px;
     width: 100%;
+    height: 30em;
+    background-repeat: no-repeat;
+    transition: 0.5s;
 }
 
-.imageshowcase div h1 {
+.imageholder:hover {
+    background-size: 120%;
+}
+
+.imageholder h2 {
+    padding: 1em;
+    color: black;
+    font-weight: 500;
     font-size: 2em;
+}
+
+.imag1 {
+    background-image: url("../media/glide1.jpeg");
+    background-size: 110%;
+    background-position: center;
+}
+
+.imag2 {
+    background-image: url("../media/glide2.jpeg");
+    background-size: 110%;
+    background-position: center;
+}
+
+.imag3 {
+    background-image: url("../media/glide3.jpeg");
+    background-size: 110%;
+    background-position: bottom;
+}
+
+.imag4 {
+    background-image: url("../media/glide4.jpg");
+    background-size: 110%;
+    background-position: top;
+}
+
+.imag5 {
+    background-image: url("../media/glide5.jpg");
+    background-size: 110%;
+    background-position: top;
 }
