@@ -103,7 +103,7 @@ nav i:hover {
 
 /* MAIN */
 main h1 {
-    margin: 0.5em auto;
+    margin: 0.5em 1em;
 }
 
 /* GALLERY */
@@ -159,4 +159,19 @@ main h1 {
     background-image: url("../media/glide5.jpg");
     background-size: 110%;
     background-position: top;
+}
+
+/* DATOS DE INTERES */
+#datosimportantes div {
+    margin: 3em auto;
+}
+
+.flexinfo {
+    display: flex;
+    width: 70%;
+}
+
+.flexinfo p, iframe {
+    width: 50%;
+    margin: 1em;
 }
