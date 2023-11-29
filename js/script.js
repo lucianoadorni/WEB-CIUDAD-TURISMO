@@ -10,25 +10,27 @@ $(document).ready(function(){
       autoplay: true,
       autoplaySpeed: 2000,
     });
-});
 
-// CHART.JS
-const ctx = document.getElementById('myChart');
-new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    datasets: [{
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
+  // CHART.JS
+  const ctx = document.getElementById('myChart');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', "Domingo"],
+      datasets: [{
+        label: '# de Grados Centigrados',
+        data: [34, 36, 37, 37, 32, 29, 28],
+        borderWidth: 1,
+        borderColor: '#D52B1E',
+        backgroundColor: '#E3D7D7',
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
       }
     }
-  }
+  });
 });

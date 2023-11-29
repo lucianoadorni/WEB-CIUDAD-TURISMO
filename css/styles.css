@@ -175,3 +175,7 @@ main h1 {
     width: 50%;
     margin: 1em;
 }
+
+#myChart {
+    width: 50%;
+}
