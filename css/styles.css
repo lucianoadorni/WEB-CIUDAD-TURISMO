@@ -23,6 +23,10 @@ h1 {
     font-size: 4em;
 }
 
+body {
+    background-color: var(--not-white);
+}
+
 /* SMOOTH SCROLL */
 html {
     scroll-behavior: smooth;
@@ -30,7 +34,7 @@ html {
 
 /* NAV */
 nav {
-    background-color: var(--not-white);
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +85,7 @@ nav i:hover {
     mix-blend-mode: screen;
 }
 
-.imageslide h1, h2, i {
+.imageslide h1,.imageslide h2,.imageslide i {
     color: var(--not-white);
 }
 
@@ -104,6 +108,35 @@ nav i:hover {
 /* MAIN */
 main h1 {
     margin: 0.5em 1em;
+}
+
+/* ASUNCION */
+#asuncion div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 70%;
+    margin: 2em auto;
+}
+
+#asuncion div div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    list-style: none;
+}
+
+#asuncion div h2 {
+    font-size: 2em;
+    font-weight: 700;
+    padding-bottom: 0.5em;
+}
+
+#asuncion div img {
+    width: 50%;
+    padding: 0em 1em;
+    /* border-radius: 70px; */
 }
 
 /* GALLERY */
@@ -175,7 +208,13 @@ main h1 {
     width: 50%;
     margin: 1em;
 }
+.flexinfo p {
+    color: black;
+    background-color: white;
+    padding: 1em;
+    border-radius: 15px;
+}
 
-#myChart {
+#chart-wrapper {
     width: 50%;
 }

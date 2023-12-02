@@ -22,10 +22,11 @@ $(document).ready(function(){
         data: [34, 36, 37, 37, 32, 29, 28],
         borderWidth: 1,
         borderColor: '#D52B1E',
-        backgroundColor: '#E3D7D7',
+        backgroundColor: '#FFFFFF',
       }]
     },
     options: {
+      responsive: true,
       scales: {
         y: {
           beginAtZero: true
@@ -33,4 +34,7 @@ $(document).ready(function(){
       }
     }
   });
+
+  // AOS
+  AOS.init();
 });
