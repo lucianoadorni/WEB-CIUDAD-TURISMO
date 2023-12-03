@@ -47,9 +47,9 @@ html {
 }
 
 #cookie-consent button {
-    background-color: var(--not-white);
+    background-color: white;
     color: black;
-    padding: 0.8em;
+    padding: 0.5em 1em;
     border: none;
     cursor: pointer;
     margin: 1em 1em;
@@ -237,6 +237,11 @@ main h1 {
     width: 100%;
     margin: 1em auto;
 }
+
+.flexinfo iframe {
+    height: 100%;
+}
+
 .flexinfo p {
     color: black;
 }
@@ -265,7 +270,7 @@ main h1 {
 
 /* ACCORDION */
 .accordion{
-    width:70%;
+    width:50%;
     list-style:none;
     padding: 0;
     margin: 3em auto;
