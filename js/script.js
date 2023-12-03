@@ -37,4 +37,19 @@ $(document).ready(function(){
 
   // AOS
   AOS.init();
+
+  // ACCORDION
+  $('.accordion').on('click', '.accordion-control', function(e){
+    e.preventDefault(); //prevent default action of a button 
+    $(this) //get the element the user clicked on
+      .next('.accordion-panel') //select the next accordion panel
+      .not(':animated') //if it is not currently animating
+      .slideToggle(); //use slideToggle to show or hide it
+  });
 });
+
+// Afura del anonimus function de jQuery porque o si no, no funciona
+// COOKIES
+function hideCookie() {
+  $("#cookie-consent").hide();
+};
