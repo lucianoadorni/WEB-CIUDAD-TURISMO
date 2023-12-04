@@ -3,13 +3,30 @@ $(document).ready(function(){
   $('.imageshowcase').slick({
       dots: true,
       centerMode: true,
-      arrows: false,
+      arrows: true,
+      appendArrows: $(".imageshowcase"),
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
-    });
+      responsive: [
+        {
+            breakpoint: 1185,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 950,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+      ]
+  });
 
   // CHART.JS
   const ctx = document.getElementById('myChart');
@@ -37,14 +54,15 @@ $(document).ready(function(){
 
   // AOS
   AOS.init();
+  AOS.refresh();
 
   // ACCORDION
   $('.accordion').on('click', '.accordion-control', function(e){
-    e.preventDefault(); //prevent default action of a button 
-    $(this) //get the element the user clicked on
-      .next('.accordion-panel') //select the next accordion panel
-      .not(':animated') //if it is not currently animating
-      .slideToggle(); //use slideToggle to show or hide it
+    e.preventDefault();
+    $(this)
+    .next('.accordion-panel')
+    .not(':animated')
+    .slideToggle();
   });
 });
 
