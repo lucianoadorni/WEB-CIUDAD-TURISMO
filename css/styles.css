@@ -276,12 +276,12 @@ main h1 {
     margin: 3em auto;
 }
   
-li{
+.accordion li{
     display: flex;
     flex-direction:column;
 }
 
-li + li{
+.accordion li + li{
     border-top:1px solid var(--pblue);
 }
 
@@ -300,4 +300,10 @@ li + li{
     background:var(--not-white);
     color:black;
     display: none;
+}
+
+/* FOOTER */
+footer {
+    background-color: white;
+    padding: 1em;
 }
