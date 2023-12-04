@@ -172,16 +172,12 @@ main h1 {
 }
 
 .imageholder {
-    background-color: var(--pred);
+    background-color: var(--not-white);
     border-radius: 30px;
     width: 100%;
     height: 30em;
     background-repeat: no-repeat;
     transition: 0.5s;
-}
-
-.imageholder:hover {
-    background-size: 140%;
 }
 
 .imag1 {
@@ -204,7 +200,7 @@ main h1 {
 
 .imag4 {
     background-image: url("../media/glide4.jpg");
-    background-size: 130%;
+    background-size: 230%;
     background-position: center;
 }
 
@@ -339,13 +335,9 @@ footer {
     }
 
     /* GALLERY */
-    .imageholder {
+    /* .imageholder {
         background-size: 180%;
-    }
-
-    .imageholder:hover {
-        background-size: 190%;
-    }
+    } */
 
     /* DATOS DE INTERES */
     #datosimportantes > div{
