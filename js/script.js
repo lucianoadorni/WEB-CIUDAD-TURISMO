@@ -35,8 +35,8 @@ $(document).ready(function(){
     data: {
       labels: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', "Domingo"],
       datasets: [{
-        label: '# de Grados Centigrados',
-        data: [34, 36, 37, 37, 32, 29, 28],
+        label: 'Velocidad del viento (km/h)',
+        data: [8, 15, 12, 15, 18, 20, 10],
         borderWidth: 1,
         borderColor: '#D52B1E',
         backgroundColor: '#FFFFFF',
