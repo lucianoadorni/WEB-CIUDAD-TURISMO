@@ -23,6 +23,11 @@ h1 {
     font-size: 4em;
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 4em;
+}
+
 body {
     background-color: var(--not-white);
 }
@@ -113,11 +118,11 @@ nav i:hover {
     mix-blend-mode: screen;
 }
 
-.imageslide h1,.imageslide h2,.imageslide i {
+.imageslide h1,.imageslide h3,.imageslide i {
     color: var(--not-white);
 }
 
-.imageslide div h2 {
+.imageslide div h3 {
     margin-left: 0.5em;
 }
 
